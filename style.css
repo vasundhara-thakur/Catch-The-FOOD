@@ -84,7 +84,7 @@ body {
 
 .bottom-buttons {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -98,11 +98,11 @@ body {
 }
 
 .time {
-  left: 20px;
+  left: 10px;
 }
 
 .score {
-  right: 20px;
+  right: 10px;
 }
 
 .message {
