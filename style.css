@@ -167,7 +167,7 @@ body {
 
   .bottom-buttons{
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 50%;
   }
   .score, .time {
@@ -178,6 +178,12 @@ body {
 @media (max-width: 480px) {
   .food {
     width: 15vw;
+  }
+
+    .bottom-buttons{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
   }
   .score, .time {
     font-size: 0.8rem;
