@@ -68,8 +68,8 @@ function createFood() {
 function getRandomLocation() {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const marginX = 150;
-  const marginY = 150;
+  const marginX = 200;
+  const marginY = 200;
   const x = Math.random() * (width - marginX * 2) + marginX;
   const y = Math.random() * (height - marginY * 2) + marginY;
   return { x, y };
