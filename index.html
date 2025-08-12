@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Catch The Food</title>
+</head>
+<body>
+ 
+  <div class="screen">
+    <h1>Catch The Food</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+  
+  <div class="screen">
+    <h1>What is your "favorite" food?</h1>
+    <ul class="food-list">
+      <li>
+        <button class="choose-food-btn">
+          <p>Pizza</p>
+          <img src="https://pngimg.com/uploads/pizza/pizza_PNG44090.png" alt="pizza">
+        </button>
+      </li>
+      <li>
+        <button class="choose-food-btn">
+          <p>Burger</p>
+          <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4135.png" alt="burger">
+        </button>
+      </li>
+      <li>
+        <button class="choose-food-btn">
+          <p>Donut</p>
+          <img src="https://pngimg.com/uploads/donut/donut_PNG54.png" alt="donut">
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="screen game-container" id="game-container">
+    <h3 id="time" class="time">Time:00:00</h3>
+    <h3 id="score" class="score">Score:0</h3>
+    
+    <div class="bottom-buttons">
+      <button class="btn" id="home-btn">Home</button>
+      <button class="btn" id="exit-btn">Exit</button>
+    </div>
+
+    <h5 id="message" class="message">
+      Are you hungry yet? <br>
+      Try to catch all the food! <br><br>
+      <button class="btn" id="yes-btn">Yes</button>
+      <button class="btn" id="no-btn">No</button>
+    </h5>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

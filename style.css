@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2E7D32;
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.btn {
+  border: 0;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #FFC107; 
+  color: #000;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.food-list li {
+  margin: 10px;
+}
+
+.choose-food-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  width: 150px;
+  height: 150px;
+}
+
+.choose-food-btn:hover {
+  background-color: #4CAF50;
+  border-color: #FFC107;
+  color: #FFC107;
+}
+
+.choose-food-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.bottom-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.message .btn {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.message .btn:hover {
+  background-color: #FFC107;
+  color: #000;
+}
+
+.food {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.food.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.food img {
+  width: 100px;
+  height: 100px;
+}
