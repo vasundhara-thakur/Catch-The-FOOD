@@ -84,7 +84,7 @@ body {
 
 .bottom-buttons {
   position: absolute;
-  bottom: 60px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -158,4 +158,28 @@ body {
 .food img {
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 768px) {
+  .food {
+    width: 12vw;
+  }
+
+  .bottom-buttons{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+  }
+  .score, .time {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .food {
+    width: 15vw;
+  }
+  .score, .time {
+    font-size: 0.8rem;
+  }
 }
