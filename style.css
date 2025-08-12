@@ -167,7 +167,7 @@ body {
 
   .bottom-buttons{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
   }
   .score, .time {
